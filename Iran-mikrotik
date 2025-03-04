@@ -1,3 +1,4 @@
+/ip/firewall/address-list
 add address=2.57.3.0/24 comment="Iran (Islamic Republic of)" list=IP2Location
 add address=2.144.0.0/14 comment="Iran (Islamic Republic of)" list=IP2Location
 add address=2.176.0.0/12 comment="Iran (Islamic Republic of)" list=IP2Location
