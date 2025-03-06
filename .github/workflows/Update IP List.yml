@@ -24,14 +24,7 @@ jobs:
         pip install requests
 
     - name: Run update script
-      run: |
-        python -c "
-import requests
-url = 'https://raw.githubusercontent.com/moli1369/Ip-List-mikrotik/refs/heads/main/Iran-mikrotik'
-response = requests.get(url)
-with open('ip-list.txt', 'w') as file:
-    file.write(response.text)
-        "
+      run: python update_ip_list.py  # اجرای فایل اسکریپت پایتون
 
     - name: Commit and push changes
       run: |
