@@ -21,8 +21,8 @@ Darüber hinaus enthält diese Liste alle IPs des Iran, die Sie anpassen können
 So richten Sie es in Mikrotik ein
 Gehen Sie hier entlang
 ---------------------
----->source
-("/system/script>
+```script Mikrotik
+/system/script>
 add script name UpdateIPList
 source 
 :local listName "IP2Location"
@@ -35,5 +35,5 @@ source
 add name AutoUpdateIPList
 interval 1d 00:00:00
 on Event
-UpdateIPList
-")
+UpdateIPList)
+```
