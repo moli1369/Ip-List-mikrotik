@@ -22,7 +22,7 @@ So richten Sie es in Mikrotik ein
 Gehen Sie hier entlang
 ---------------------
 ---->source
-/system/script>
+("/system/script>
 add script name UpdateIPList
 source 
 :local listName "IP2Location"
@@ -36,3 +36,4 @@ add name AutoUpdateIPList
 interval 1d 00:00:00
 on Event
 UpdateIPList
+")
