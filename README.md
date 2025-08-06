@@ -21,7 +21,7 @@ Darüber hinaus enthält diese Liste alle IPs des Iran, die Sie anpassen können
 So richten Sie es in Mikrotik ein
 Gehen Sie hier entlang
 ---------------------
-script Mikrotik Mit remove Älter list und update nur nue list
+script Mikrotik Mit Löschen Älter list und update nur nue list
 ```
 :local listName "IP2Location"
  /tool fetch url="https://raw.githubusercontent.com/moli1369/Ip-List-mikrotik/refs/heads/main/Iran-mikrotik" mode=https dst-path=ip_list.rsc
@@ -29,7 +29,7 @@ script Mikrotik Mit remove Älter list und update nur nue list
 /import file=ip_list.rsc
 :log info ("Ip list ist update und kein problem.!!!")
 ```
-keine remove address list aber nur update list ip 
+keine Löschen address list aber nur update list ip 
 ```
 :local listName "IP2Location"
  /tool fetch url="https://raw.githubusercontent.com/moli1369/Ip-List-mikrotik/refs/heads/main/Iran-mikrotik" mode=https dst-path=ip_list.rsc
