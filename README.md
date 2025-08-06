@@ -38,5 +38,5 @@ and > next
 add name AutoUpdateIPList
 interval 1d 00:00:00
 on Event
-UpdateIPList)
+UpdateIPList
 ```
