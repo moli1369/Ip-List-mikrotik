@@ -21,7 +21,8 @@ Darüber hinaus enthält diese Liste alle IPs des Iran, die Sie anpassen können
 So richten Sie es in Mikrotik ein
 Gehen Sie hier entlang
 ---------------------
-```script Mikrotik
+script Mikrotik
+```
 /system/script>
 add script name UpdateIPList
 source 
@@ -30,7 +31,9 @@ source
 /ip firewall address-list remove [find list=$listName]
 /import file=ip_list.rsc
 :log info ("Ip list ist update und kein problem.!!!")
------>next
+```
+and > next
+```
 /system/scheduler>
 add name AutoUpdateIPList
 interval 1d 00:00:00
