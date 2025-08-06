@@ -25,7 +25,6 @@ script Mikrotik
 ```
 /system/script>
 add script name UpdateIPList
-source 
 :local listName "IP2Location"
  /tool fetch url="https://raw.githubusercontent.com/moli1369/Ip-List-/main/Iran-mikrotik" mode=https dst-path=ip_list.rsc
 /ip firewall address-list remove [find list=$listName]
