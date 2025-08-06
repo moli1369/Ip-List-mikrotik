@@ -29,6 +29,8 @@ script Mikrotik Mit Löschen Älter list und update nur nue list
 /import file=ip_list.rsc
 :log info ("Ip list ist update und kein problem.!!!")
 ```
+Oder 
+👇
 keine Löschen address list aber nur update list ip 
 ```
 :local listName "IP2Location"
