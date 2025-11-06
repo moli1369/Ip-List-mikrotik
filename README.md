@@ -35,7 +35,7 @@ keine Löschen address list aber nur update list ip
 ```
 :local listName "IP2Location"
  /tool fetch url="https://raw.githubusercontent.com/moli1369/Ip-List-mikrotik/refs/heads/main/Iran-mikrotik" mode=https dst-path=ip_list.rsc
-/ip firewall address-list add [find list=$listName]
+/ip firewall address-list [find list=$listName]
 /import file=ip_list.rsc
 :log info ("Ip list ist update und kein problem.!!!")
 ```
