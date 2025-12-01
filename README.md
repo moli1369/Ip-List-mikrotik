@@ -24,8 +24,8 @@ Gehen Sie hier entlang
 script Mikrotik Mit Löschen Älter list und update nur nue list
 ```
 :local listName "IP2Location"
-/tool fetch url="https://raw.githubusercontent.com/moli1369/Ip-List-mikrotik/refs/heads/main/Iran-mikrotik" mode=https dst-path=ip_list
-/import file-name=$i
+/tool fetch url="https://raw.githubusercontent.com/moli1369/Ip-List-mikrotik/refs/heads/main/Iran-mikrotik" mode=https dst-path=ip_list.rsc
+/import file-name=rsc
 :log info ("Ip list ist update und kein problem.!!!")
 ```
 Oder 
